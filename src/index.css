@@ -9,3 +9,16 @@ html {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+/* Make sure all elements include padding/border in width */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal overflow on the whole page */
+body, html {
+  overflow-x: hidden;
+  width: 100vw;
+}
